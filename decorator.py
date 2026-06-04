@@ -27,15 +27,12 @@ class bank_account:
         self.__acc_num=acc_num
     @property
     def getter(self):
-        return self.__balance,self.__acc_num
-    @getter.setter
-    def setter(self,value1,value2):
-        self.__balance = value1
-        self.__acc_num=value2
+        return self.__balance
+    def setter(self, new_value):
+        self.__balance=new_value
 obj=bank_account(1000,123456)
-print(obj.getter)
-obj.setter(200,400)
-print(obj.setter)
-print(obj.getter)
-print("program successfully executed")
+print(obj._bank_account__balance)
+obj.setter(2000)
+print(obj._bank_account__balance)#using name mangling ist method
 #program successfully executed
+

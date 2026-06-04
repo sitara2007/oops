@@ -44,4 +44,7 @@ class bank_account:
     def setter(self, new_val):
         self.bal=new_val
 obj=bank_account(400,123456)
-  
+print(obj.getter())
+obj.setter(500)
+print(obj.getter())
+#program successfully executed  
