@@ -2,7 +2,7 @@
 #  constructor and create a child class developer and construct the requirements are programming language and inherit the parent class and assign values to
 #  the child class objects and display
 #  the details of employee using method overriding
-class Employee:#creating a parent class called employee
+class Employee:#creating a parent class called employee #base class
     def __init__(self,emp_name, salary):#defining a constructor
         self.name=emp_name
         self.s=salary
