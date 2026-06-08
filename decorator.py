@@ -35,4 +35,17 @@ print(obj._bank_account__balance)
 obj.setter(2000)
 print(obj._bank_account__balance)#using name mangling ist method
 #program successfully executed
-
+class bank_account:
+    def __init__(self, balance, account_num ):#CONSTRUCTOR
+        self.__balance = balance #private property
+        self.acc_num=account_num
+    @property
+    def getter(self):
+        return self.__balance
+    def setter(self, new_val):
+        self.__balance=new_val
+obj=bank_account(400,123456)
+print(obj.getter)
+obj.setter(500)
+print(obj.getter)
+#program successful

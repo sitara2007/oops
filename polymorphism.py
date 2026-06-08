@@ -1,4 +1,6 @@
-#polymorphism in python overloading 
+#polymorphism in python overloading / overriding
+#s the OOPS concept that allows different classes to share the same method name but behave 
+# completely differently based on the object calling them.
 class rohit:
     def __init__(self, name):#constructor to initialize the name of the player
         self.name = name
